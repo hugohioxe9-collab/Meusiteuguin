@@ -7,31 +7,9 @@ font-family:Arial;
 
 body{
 
-background:#050505;
+background:#090909;
 
 color:white;
-
-}
-
-.blur{
-
-position:fixed;
-
-width:600px;
-
-height:600px;
-
-background:#ff9900;
-
-filter:blur(250px);
-
-opacity:.2;
-
-left:50%;
-
-transform:translateX(-50%);
-
-z-index:-1;
 
 }
 
@@ -41,17 +19,17 @@ display:flex;
 
 justify-content:space-between;
 
-padding:30px 10%;
+padding:35px 8%;
 
 }
 
 .logo{
 
-font-size:35px;
+font-size:32px;
 
 font-weight:900;
 
-color:#ffb300;
+color:#ff9d00;
 
 }
 
@@ -59,15 +37,25 @@ nav{
 
 display:flex;
 
-gap:30px;
+gap:35px;
+
+}
+
+nav a{
+
+color:#ddd;
+
+text-decoration:none;
 
 }
 
 .hero{
 
-height:80vh;
+height:85vh;
 
 display:flex;
+
+flex-direction:column;
 
 justify-content:center;
 
@@ -75,65 +63,71 @@ align-items:center;
 
 text-align:center;
 
+background:
+
+radial-gradient(
+circle,
+rgba(255,150,0,.25),
+transparent 50%
+);
+
 }
 
 .hero h1{
 
 font-size:140px;
 
-color:#ffb300;
+font-weight:900;
 
 }
 
 .hero p{
 
-font-size:24px;
+margin-top:15px;
 
 opacity:.8;
 
 }
 
-button{
+.botao{
 
-margin-top:30px;
+margin-top:35px;
 
 padding:18px 60px;
 
-border:none;
-
 border-radius:999px;
 
-background:#ffb300;
+background:
+
+linear-gradient(
+90deg,
+#ffb300,
+#ff7000
+);
+
+color:black;
 
 }
 
-.cards{
+.painel{
+
+padding:80px;
 
 display:grid;
 
 grid-template-columns:
 repeat(auto-fit,minmax(300px,1fr));
 
-gap:30px;
-
-padding:80px;
+gap:25px;
 
 }
 
 .card{
 
-background:#111;
+background:#141414;
 
-padding:50px;
+padding:45px;
 
-border-radius:25px;
-
-}
-
-footer{
-
-padding:50px;
-
-text-align:center;
+border-radius:22px;
 
 }
